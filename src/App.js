@@ -9,6 +9,7 @@ import {
   Link
 } from "react-router-dom";
 import { SocialIcon } from 'react-social-icons';
+import {Helmet} from "react-helmet";
 function App() {
 
   let items;
@@ -51,6 +52,9 @@ function App() {
   }
   return (
     <Router>
+      <Helmet>
+        <title>TODOApp</title>
+      </Helmet>
       <div className="App" >
         <h1>To Do App</h1>
         <img src={logo} alt="" height="50px" width="100px" className="logo" />
