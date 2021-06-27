@@ -34,13 +34,18 @@ body{
 .list{
   text-align:initial ;
   background-color: lightblue;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 30vw;
+  margin-right: 30vw;
   height:auto;
   margin-bottom: 10vh;
 }
 .list ul:last-child li:last-child{
   border-top: none;
+}
+.list ul li{
+  overflow-wrap:break-word ;
+  justify-content:right ;
+  position:relative;
 }
 .nav-menu{
   display:grid;
@@ -48,7 +53,7 @@ body{
   margin-left: 27%;
 }
 ul {
-  list-style-type: none;
+  list-style-type: none; 
   display:flex;
   flex-direction: column-reverse;
 }
